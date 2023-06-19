@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <section>
+        <div class="content">
+            <div class="title">
+                Cart Items
+            </div>
+            <div id="cartData">
+                <h1>Loading...</h1>
+            </div>
+            <button onclick="clearCart()">Clear All</button>
+            <h2>Quantity : <span id="cartQuantity"></span></h2>
+        </div>
+    </section>
+
+
+    <script src="./JS/cart.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(function () {
+            $("#navbar").load("navbar.html");
+        })
+    </script>
+</body>
+
+</html>
