@@ -15,7 +15,10 @@ async function getProducts() {
                                     ${product.title}
                                 </a>
                             </h5>
-                            <p class="card-text">${product.description}</p>
+                            <div class="h-50">
+                                <p class="card-text">${product.description}</p>
+                            </div>
+                            <p class="badge" style="background-color: #6610f2; color: #fff;">${product.category}</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between align-items-center">
                             <div class="price">$ ${product.price}</div>
