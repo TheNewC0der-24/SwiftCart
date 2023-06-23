@@ -6,19 +6,25 @@ async function getProducts() {
 
     products.products.map((product) => {
         output += `
-            <div class="products-card" id=${product.id}>
-                    <div class="products-card-body">
-                        <img src=${product.thumbnail} alt="product">
-                        <h3>${product.title}</h3>
-                        <p>${product.description}</p>
-                        <div class="products-card-footer">
-                            <div class="price">
-                                $ ${product.price}
-                            </div>
+                <div class="card h-100 my-2 me-4" id=${product.id} style="width: 25rem;">
+                    <div class="card-body d-flex justify-content-between flex-column">
+                        <img class="card-img-top product-img" src=${product.thumbnail} alt="product">
+                        <div class="card-content my-3">
+                            <h5 class="card-title">
+                                <a class="text-decoration-none product-title" href="#" onclick="viewProductDetails(${product.id})">
+                                    ${product.title}
+                                </a>
+                            </h5>
+                            <p class="card-text">${product.description}</p>
                         </div>
-                        <button onclick="addToCart(${product.id})">Add To Cart</button>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="price">Rs. ${product.price}</div>
+                            <button class="btn" style="background-color: #6610f2; color: #fff;" onclick="addToCart(${product.id})">
+                                Add To Cart
+                            </button>
+                        </div>
                     </div>
-            </div>
+                </div>
         `;
     });
 
@@ -36,5 +42,14 @@ function addToCart(id) {
         cart.push(id);
         localStorage.setItem('cartItem', JSON.stringify(cart));
     }
+
+    document.getElementById('cartItem').innerHTML = JSON.parse(localStorage.getItem('cartItem')).length;
+}
+
+document.getElementById('cartItem').innerHTML = JSON.parse(localStorage.getItem('cartItem')).length;
+
+function viewProductDetails(id) {
+    // Navigate to the product details page with the corresponding product ID
+    window.location.href = `productDetails.html?id=${id}`;
 }
 
