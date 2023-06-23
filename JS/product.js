@@ -18,7 +18,7 @@ async function getProducts() {
                             <p class="card-text">${product.description}</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between align-items-center">
-                            <div class="price">Rs. ${product.price}</div>
+                            <div class="price">$ ${product.price}</div>
                             <button class="btn" style="background-color: #6610f2; color: #fff;" onclick="addToCart(${product.id})">
                                 Add To Cart
                             </button>
