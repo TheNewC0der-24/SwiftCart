@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCart</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3">SwiftCart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars open"></i>
+                <i class="fa-solid fa-xmark close"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold active" aria-current="page" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="./products.html"><i class="fa-solid fa-store"></i>
+                            Products</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="./cart.html">
+                            <i class="fa-solid fa-cart-shopping fs-5"></i>
+                            <span class=" start-80 translate-middle badge rounded-pill bg-danger" id="cartItem">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <div class="banner"></div>
+
+    <div class="container my-5">
+        <h2>Our Features</h2>
+        <div class="row g-4 my-1">
+            <div class="col">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <div class="card-img-top">
+                            <img src="./assets/Features/f1.png" alt="free shipping">
+                        </div>
+                        <h5 class="card-title">Fast and Reliable Shipping</h5>
+                        <p class="card-text">
+                            Enjoy free and speedy shipping on all orders. We prioritize delivering your
+                            products with utmost care and efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <div class="card-img-top">
+                            <img src="./assets/Features/f2.png" alt="online-order">
+                        </div>
+                        <h5 class="card-title">Convenient Online Ordering</h5>
+                        <p class="card-text">
+                            Experience the ease of placing orders online from the comfort of your home. Our
+                            user-friendly website makes the ordering
+                            process quick and hassle-free.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <div class="card-img-top">
+                            <img src="./assets/Features/f3.png" alt="save-money">
+                        </div>
+                        <h5 class="card-title">Amazing Savings on Every Purchase</h5>
+                        <p class="card-text">
+                            Shop smart and save big! Take advantage of our competitive prices and exclusive deals to get
+                            the best value for your
+                            money.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <div class="card-img-top">
+                            <img src="./assets/Features/f4.png" alt="support">
+                        </div>
+                        <h5 class="card-title">24/7 Support</h5>
+                        <p class="card-text">
+                            We're here for you anytime, day or night. Our dedicated support team is available 24/7 to
+                            assist you with any inquiries
+                            or concerns you may have.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="./JS/product.js"></script>
+
+</body>
+
+</html>
