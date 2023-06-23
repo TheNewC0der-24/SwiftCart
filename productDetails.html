@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCart - Product Details</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-7 m-auto">
+                <div class="d-flex flex-wrap gap-3 my-3" id="productImages"></div>
+            </div>
+
+            <div class="col-md-5 m-auto">
+                <h3 id="productTitle"></h3>
+
+                <div class="d-flex gap-1">
+                    <h5 id="productBrand"></h5>
+                    <span id="productCategory"></span>
+                </div>
+
+                <p id="productDescription"></p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <p id="productPrice"></p>
+                    <p class="badge bg-secondary" id="productDiscount"></p>
+                </div>
+
+
+                <button class="btn btn-outline-dark" onclick="handleBack()">
+                    Back
+                </button>
+                <button class="btn" style="background-color: #6610f2; color: #fff;">
+                    <i class="fa-solid fa-star"></i>
+                    <span id="rating"></span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center d-none" id="loader">
+            <strong>Loading...</strong>
+            <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="./JS/productDetails.js"></script>
+</body>
+
+</html>
