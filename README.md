@@ -46,3 +46,6 @@ Contributions to this project are welcome! If you find any issues or have sugges
 ```
 https://thenewc0der-24.github.io/SwiftCart/
 ```
+
+---
+<h3 align="center">Show some ❤️ by ⭐ this repo! </h3>
